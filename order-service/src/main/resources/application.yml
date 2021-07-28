@@ -4,4 +4,6 @@ spring:  h2:    console:      enabled: true  datasource:    url: jdbc:h2:me
   application:    name: ORDER-SERVICE
 eureka:  client:    service-url:      defaultZone: http://localhost:8762/eureka    fetch-registry: true
     register-with-eureka: true
+  instance:
+    prefer-ip-address: true
 payment-microservice-name: http://PAYMENT-SERVICE

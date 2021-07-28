@@ -23,4 +23,8 @@ public class PaymentService {
 	private String paymentStatus() {
 		return new Random().nextBoolean() ? "success": "failure";
 	}
+
+	public Payment getPayment(int orderId) {
+		return repository.findByOrderId(orderId);
+	}
 }

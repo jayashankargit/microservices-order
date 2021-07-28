@@ -6,10 +6,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.jay.os.api.common.Payment;
 import io.jay.os.api.common.TransactionRequest;
 import io.jay.os.api.common.TransactionResponse;
-import io.jay.os.api.entity.Order;
 import io.jay.os.api.service.OrderService;
 
 @RestController
